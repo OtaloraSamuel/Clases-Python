@@ -99,3 +99,11 @@ print("Python" in frase)
 frase=frase.replace("Tecnología", "Programación")
 frase=frase.split()
 '''
+# ===== PARTE C =====
+# 5. Desarrolla un programa
+nombre, apellido, pais, ancho_de_la_pared, alto_de_la_pared, precio_por_metro_cuadrado=input("Ingrese su nombre: "), input("Ingrese su apellido: "), input("Ingrese su país: "), int(input("Ingrese el ancho de la pared: ")), int(input("Ingrese el alto de la pared: ")), int(input("Ingrese el precio por metro cuadrado"))
+area_de_la_pared=ancho_de_la_pared*alto_de_la_pared
+costo_total_estimado=area_de_la_pared*precio_por_metro_cuadrado
+nombre_completo=nombre+" "+apellido
+print(f'---Reporte Final---\nNombre completo: {nombre_completo}\nPaís: {pais}\nArea de la pared: {area_de_la_pared}\nCosto total estimado: {costo_total_estimado}')
+print(f'---Adicional---\n{nombre_completo.upper()}\nLongitud de tu nombre completo: {len(nombre_completo)}\nLetra "a" en tu nombre completo: {"a" in nombre_completo}\nCosto total mayor a 100: {costo_total_estimado>100}')

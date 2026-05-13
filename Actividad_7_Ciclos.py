@@ -57,7 +57,10 @@ print(f"Tu nombre de usuario es {name}")
 # Ejercicio con continue
 '''
 num=input("Ingresa tu número de telefono: ")
-num=num.replace(" ", "")
-num=num.replace("-","")
-print(num)
+nu=""
+for i in num:
+    if i==" " or i=="-":
+        continue
+    nu+=i
+print(nu)
 '''

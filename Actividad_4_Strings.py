@@ -1,1 +1,55 @@
-#ahora una diapositiva que hable de los string, que se puede poner tripe comilla para declarar un texto en una variable de multiples lineas, la funcion len para contar el texto, tambien para juntar texto con + o multiplicar el texto *, añade lo de \n lo q hace y todas las demás que son \t, \\, \', y \¨, también añade de como escribir varialbes dentro de un texto con el .format y la versión moderna f'{}' también añade .2f que añade 2 ecimales o muestra mejor dicho 2 decimales al numero, añade desempaquetar, que es asignar varias variables a una variable o sea lenguaje="Python" a,b,c,d,e,f=lenguaje, añade también slicing que es nombre="samuel" last_letter=nombre[-2] print(last_letter)
+#Ejercicio 1
+'''
+str1 = "James"
+print("Original String is", str1)
+
+# Get first character
+first_char = str1[0]
+
+# Get middle character
+# Calculate index by dividing length by 2
+res = len(str1)
+middle_index = int(res / 2)
+mid_char = str1[middle_index]
+
+# Get last character
+last_char = str1[-1]
+
+# Combine characters
+res_str = first_char + mid_char + last_char
+print("New String:", res_str)
+'''
+# Ejercicio 2
+'''
+def get_middle_three_chars(str1):
+    print("Original String is", str1)
+
+    # Find middle index
+    mi = int(len(str1) / 2)
+
+    # Slice string from (mid - 1) to (mid + 2)
+    res = str1[mi - 1:mi + 2]
+    print("Middle three chars are:", res)
+
+get_middle_three_chars("JhonDipPeta")
+get_middle_three_chars("JaSon")
+'''
+#Ejercicio 3
+'''
+def append_middle(s1, s2):
+    print("Original Strings are", s1, s2)
+
+    # Find middle index of first string
+    mi = int(len(s1) / 2)
+
+    # Get character from 0 to middle index
+    x = s1[:mi]
+    # Get character from middle index to end
+    y = s1[mi:]
+
+    # Combine all three
+    res = x + s2 + y
+    print("After appending new string in middle:", res)
+
+append_middle("Ault", "Kelly")
+'''

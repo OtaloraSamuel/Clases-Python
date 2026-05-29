@@ -64,3 +64,42 @@ for i in num:
     nu+=i
 print(nu)
 '''
+#Ejercicios de for in range
+'''
+notas=[1,2,3,4,5,6,7,8,9,10]
+n=-1
+while n<=0 or n>=11:
+    n=int(input("Ingresa el número de notas que quieres ver: "))
+print(n)
+for i in range(n):
+    print(f"Notas registradas: {notas[i]}")
+'''
+#Ejercicio
+'''
+n=int(input("Ingrese un número: "))
+for i in range(n,0,-1):
+    text=""
+    for a in range(1,i+1):
+        text+=str(a)
+    print(text)
+'''
+#Ejercicio
+'''
+num=int(input("Ingrese un número: "))
+inicio=int(input("Ingrese el inicio de la tabla: "))
+fin=int(input("Ingrese el fin de la tabla: "))
+for i in range(inicio,fin+1):
+    print(f'{num}x{i}={num*i}')
+'''
+#Ejercicio
+'''
+lst=[5,8,9,7,10]
+suma=0
+for i in range(1,4):
+    suma+=lst[i]
+print(f"Promedio: {suma/3}")
+'''
+estudiantes = ["Ana", "Luis", "María", "Carlos", "Sofía", "Mateo"]
+for i in range(0,5,2):
+    print(i)
+    print(f"Pareja: {estudiantes[i]}, {estudiantes[i+1]}")
